@@ -20,8 +20,6 @@ public class driver {
 		    gameover = true;
 		}
 		
-		//run tester to check if it works correctly
-		//tester();
 	}
 	
 	public static void start_game() {
@@ -48,7 +46,8 @@ public class driver {
 			
 			//add to player list
 			player_list.add(newPlayer);
-
+			
+		input.close();
 		}
 		
 	}
@@ -106,15 +105,4 @@ public class driver {
 		
 	}
 	
-	public static void tester() {
-		
-		//test players counted and created correctly
-		System.out.println("Num players: " + num_players);
-		System.out.println("Player array size: " + player_list.size());
-		for(Player p : player_list) {
-			System.out.println("Player ID: " + p.playerID);
-			System.out.println("Player Name: " + p.playerName);
-		}
-		
-	}
 }
