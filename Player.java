@@ -34,7 +34,12 @@ public class Player {
 		//Jail = 40
 		
 		location += rollSum;
-		if (location >= 40) location -= 40;
+		if (location >= 40) {
+			location -= 40;
+			//add $200 for passing GO
+			System.out.println("You collected $200 for passing GO!");
+			setBalance(200);
+		}
 		
 	}
 	
@@ -46,8 +51,8 @@ public class Player {
 		return balance;
 	}
 	
-	public void setBalance(int newBalance) {
-		balance = newBalance;
+	public void setBalance(int changeInBalance) {
+		balance += changeInBalance;
 	}
 	
 	public HashMap<Integer, List<Integer>> getProperties() {
