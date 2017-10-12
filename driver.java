@@ -17,6 +17,10 @@ public class driver {
 		while(gameover != true) {
 			player_turn(player_list.get(turn-1));
 		    player_turn(player_list.get(turn-1));
+		    player_turn(player_list.get(turn-1));
+		    player_turn(player_list.get(turn-1));
+		    player_turn(player_list.get(turn-1));
+		    player_turn(player_list.get(turn-1));
 		    gameover = true;
 		}
 		
@@ -47,8 +51,8 @@ public class driver {
 			//add to player list
 			player_list.add(newPlayer);
 			
-		input.close();
 		}
+		input.close();
 		
 	}
 
